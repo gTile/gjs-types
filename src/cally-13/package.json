@@ -1,0 +1,46 @@
+{
+    "name": "@gtile/cally-13",
+    "version": "13.0.0-3.2.3",
+    "description": "GJS TypeScript type definitions for Cally-13, generated from library version 13.0.0",
+    "type": "module",
+    "module": "cally-13.js",
+    "main": "cally-13.js",
+    "exports": {
+      "./ambient": "./cally-13-ambient.d.ts",
+      "./import": "./cally-13-import.d.ts",
+      ".": {
+        "import": {
+          "types": "./cally-13.d.ts",
+          "default": "./cally-13.js"
+        },
+        "require": {
+          "types": "./cally-13.d.cts",
+          "default": "./cally-13.cjs"
+        }
+      }
+    },
+    "scripts": {
+      "test": "yarn test:esm && yarn test:cjs",
+      "test:esm": "NODE_OPTIONS=--max_old_space_size=9216 tsc --noEmit cally-13.d.ts",
+      "test:cjs": "NODE_OPTIONS=--max_old_space_size=9216 tsc --noEmit cally-13.d.cts"
+    },
+    "dependencies": {
+      "@gtile/gjs": "3.2.3",      "@gtile/mtk-13": "*",            "@gtile/cairo-1.0": "*",            "@gtile/gobject-2.0": "*",            "@gtile/glib-2.0": "*",            "@gtile/graphene-1.0": "*",            "@gtile/coglpango-13": "*",            "@gtile/pangocairo-1.0": "*",            "@gtile/pango-1.0": "*",            "@gtile/harfbuzz-0.0": "*",            "@gtile/freetype2-2.0": "*",            "@gtile/gio-2.0": "*",            "@gtile/cogl-13": "*",            "@gtile/gl-1.0": "*",            "@gtile/clutter-13": "*",            "@gtile/json-1.0": "*",            "@gtile/atk-1.0": "*"      
+    },
+    "devDependencies": {
+      "typescript": "*"
+    },
+    "keywords": ["Gir", "TypeScript", "types", "GObject-Introspection", "GJS", "Cally-13"],
+    "author": "ts-for-gir",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/gjsify/types.git"
+    },
+    "bugs": {
+      "url": "https://github.com/gjsify/ts-for-gir/issues"
+    },
+    "homepage": "https://github.com/gjsify/types/tree/main/cally-13#readme"
+}
+
+

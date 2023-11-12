@@ -1,0 +1,46 @@
+{
+    "name": "@gtile/shell-13",
+    "version": "13.0.0-3.2.3",
+    "description": "GJS TypeScript type definitions for Shell-13, generated from library version 13.0.0",
+    "type": "module",
+    "module": "shell-13.js",
+    "main": "shell-13.js",
+    "exports": {
+      "./ambient": "./shell-13-ambient.d.ts",
+      "./import": "./shell-13-import.d.ts",
+      ".": {
+        "import": {
+          "types": "./shell-13.d.ts",
+          "default": "./shell-13.js"
+        },
+        "require": {
+          "types": "./shell-13.d.cts",
+          "default": "./shell-13.cjs"
+        }
+      }
+    },
+    "scripts": {
+      "test": "yarn test:esm && yarn test:cjs",
+      "test:esm": "NODE_OPTIONS=--max_old_space_size=9216 tsc --noEmit shell-13.d.ts",
+      "test:cjs": "NODE_OPTIONS=--max_old_space_size=9216 tsc --noEmit shell-13.d.cts"
+    },
+    "dependencies": {
+      "@gtile/gjs": "3.2.3",      "@gtile/st-13": "*",            "@gtile/meta-13": "*",            "@gtile/xlib-2.0": "*",            "@gtile/xfixes-4.0": "*",            "@gtile/mtk-13": "*",            "@gtile/cairo-1.0": "*",            "@gtile/gobject-2.0": "*",            "@gtile/glib-2.0": "*",            "@gtile/graphene-1.0": "*",            "@gtile/gdesktopenums-3.0": "*",            "@gtile/coglpango-13": "*",            "@gtile/pangocairo-1.0": "*",            "@gtile/pango-1.0": "*",            "@gtile/harfbuzz-0.0": "*",            "@gtile/freetype2-2.0": "*",            "@gtile/gio-2.0": "*",            "@gtile/cogl-13": "*",            "@gtile/gl-1.0": "*",            "@gtile/clutter-13": "*",            "@gtile/json-1.0": "*",            "@gtile/atk-1.0": "*",            "@gtile/gdkpixbuf-2.0": "*",            "@gtile/gmodule-2.0": "*",            "@gtile/cally-13": "*",            "@gtile/polkitagent-1.0": "*",            "@gtile/polkit-1.0": "*",            "@gtile/nm-1.0": "*",            "@gtile/gvc-1.0": "*",            "@gtile/gcr-4": "*",            "@gtile/gck-2": "*"      
+    },
+    "devDependencies": {
+      "typescript": "*"
+    },
+    "keywords": ["Gir", "TypeScript", "types", "GObject-Introspection", "GJS", "Shell-13"],
+    "author": "ts-for-gir",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/gjsify/types.git"
+    },
+    "bugs": {
+      "url": "https://github.com/gjsify/ts-for-gir/issues"
+    },
+    "homepage": "https://github.com/gjsify/types/tree/main/shell-13#readme"
+}
+
+
