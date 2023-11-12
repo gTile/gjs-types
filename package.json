@@ -1,0 +1,10 @@
+{
+  "name": "gjs-types",
+  "version": "1.0.0",
+  "description": "Auto-generated type for GJS APIs",
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "devDependencies": {
+    "@ts-for-gir/cli": "^3.2.3"
+  }
+}
