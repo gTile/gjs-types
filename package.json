@@ -4,6 +4,12 @@
   "description": "Auto-generated type for GJS APIs",
   "license": "Apache-2.0",
   "main": "index.js",
+  "scripts": {
+    "generate:types": "npx ts-for-gir generate Adw-1 St-13 Shell-13 GnomeBG-4.0 GnomeDesktop-4.0 Shew-0 -o src/ --package --npmScope @gtile -g /usr/share/gir-1.0 -g /usr/share/gnome-shell -g /usr/share/gnome-shell/gir-1.0 -g /usr/lib/mutter-13",
+    "prebuild": "mkdir -p dist",
+    "build": "find src/ -mindepth 1 -maxdepth 1 -type d -exec sh -c 'cd {} && npm pack' \\;",
+    "postbuild": "mv src/**/*.tgz dist/"
+  },
   "devDependencies": {
     "@ts-for-gir/cli": "^3.2.3"
   }
